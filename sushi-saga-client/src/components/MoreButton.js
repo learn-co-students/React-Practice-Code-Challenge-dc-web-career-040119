@@ -1,9 +1,15 @@
 import React from 'react'
 
 const MoreButton = (props) => {
-    return <button onClick={/* Fill me in! */ null}>
-            More sushi!
-          </button>
+
+  function handleSushiFetch (event) {
+    props.fetchSushi()
+  }
+  return (
+        <button onClick={handleSushiFetch}>
+          More sushi!
+        </button>
+  )
 }
 
 export default MoreButton
