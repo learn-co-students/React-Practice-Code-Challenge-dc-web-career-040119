@@ -1,7 +1,8 @@
 import React from 'react'
 
 const MoreButton = (props) => {
-    return <button onClick={/* Fill me in! */ null}>
+  // debugger
+    return <button onClick={props.handleMoreButton}>
             More sushi!
           </button>
 }
